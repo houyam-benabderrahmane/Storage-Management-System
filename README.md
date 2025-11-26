@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+ *Marketplace Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Full-Stack Web App – Spring Boot & React
 
-## Available Scripts
+This project is a complete marketplace platform connecting Admins, Fournisseurs (Suppliers), Commerçants (Sellers), and Clients. It manages products, orders, cancellations, supplier requests, and categories.
 
-In the project directory, you can run:
+*Technologies
 
-### `npm start`
+Backend: Spring Boot, Spring Data JPA, MySQL
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Frontend: React.js, Axios, React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Database: Triggers, Stored Procedures, Relational Model
 
-### `npm test`
+*Main Features
+-Admin
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Validate supplier accounts
 
-### `npm run build`
+Manage supplier requests & products
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add and manage categories
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-Commerçant
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Manage client orders (validate / cancel)
 
-### `npm run eject`
+View supplier products
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Manage own products
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-Fournisseur
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create and track product requests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Manage provided products
 
-## Learn More
+*Database Highlights
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Fully normalized relational schema
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Strong constraints (PK, FK, UNIQUE, CHECK)
 
-### Code Splitting
+Triggers for price auto-calculation, stock updates, and command validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Stored procedures for order placement, validation, product sorting, category creation, etc.
 
-### Analyzing the Bundle Size
+* Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Backend: REST API with services, controllers, repositories
 
-### Making a Progressive Web App
+Frontend: Responsive UI with dashboards for each role
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
